@@ -1,0 +1,42 @@
+body{
+
+/* background code will set the background colour and it always end with semi colon in the css */
+/* here 6 digits represent 3 pair and 3 digits represent 1 digit itself 1st pair is for red 2nd for green 3rd for blue */
+
+  background: #5051a0;   /* this is hex code can be of 6 and 3 digits .This one is of six digits each digit can go to 0 to 9 and then a,b,c to f f is max no and 1 is the smallest code */
+  background: #550;      /* this is 3 digit hex code for more colour precision  we use 6 digits*/
+  background: rgb(255, 0, 0);  /* this is another type of background colour known as rgb which goes from 0 to 255 for each value */
+  background: rgba(255, 200, 100, 0.5); /* same as rgb a is for opacity a can go from 0 to 1 ....... 0.5 here means half transparent  */
+
+  /this sets the text colour written in html page/
+
+  color: : #a00  /* sets the colour of each and every text in the body to specified colour...... here red */
+}
+
+
+/*element specificity starts here */
+
+
+body > main > section > h3 {      /* header should be a direct child of body and h3 should be a direct child of header ........thats why we didn't use body >h3 */
+
+  color: #0a0; /* this color will take place no matter if color specified below or not because of specificity this is called element specificity*/
+
+}
+
+
+/*element specificity ends here */
+
+h3{
+
+  color: #a00    /* sets the colour of each and every text in the h3 elements to specified colour..... here red */
+
+}
+
+body h3 {
+
+  color: #2ff    /* sets the colour of each and every text in the h3 elements in the body to specified colour..... here red */
+
+}
+
+
+/*  If i keep these all three they all will  run  according to there postion forst body then h3 then body h3 */
